@@ -52,6 +52,6 @@ O resultado do algoritmo feito em MATLAB de busca exaustiva encontrou que a melh
 
 e o lucro ótimo obtido foi de R\$ 275,00
 
-Foi comparado com a solução de um solver em python e o resultado obtido foi o mesmo da busca exaustiva. O link para o código em python está abaixo:
+Foi comparado com a solução de um solver em Python e o resultado obtido foi o mesmo da busca exaustiva. O link para o código em python está abaixo:
 
 [Google colab](https://colab.research.google.com/drive/1TSMIn_uTb4qzO2OyouqzFXC0bpb7IovI?usp=sharing)
