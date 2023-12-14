@@ -27,7 +27,9 @@ Para entender melhor o problema a figura abaixo mostra como funciona a variável
 # Alocando números para o problema
 Agora que entendemos o problema, devemos tratar o problema numericamente ao invez de genericamente. Para isso foi proposto um problema com 5 máquinas virtuais (com demandas e preços) e 2 servidores (com capacidades), mostrados na figura abaixo:
 
-![ColocandoNumerosAoProblema](https://github.com/joelalison/Virtual_Machine_Allocated_On_Servers/issues/3#issue-2040886809)
+<p align="center">
+    <img src="imagens/ColocandoNumerosAoProblema.png" alt="Acrescentando números ao problema" width="500">
+</p>
 
 ----
 
