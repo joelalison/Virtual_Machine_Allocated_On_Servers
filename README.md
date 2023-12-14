@@ -2,7 +2,7 @@
 
 Neste problema temos um conjunto $` {1…V} `$ de VMs, sendo que cada VM i possui um preço pi e uma demanda de capacidade di. Temos também um conjunto de servidores $` {1…M} `$, com cada servidor **j** possuindo sua respectiva capacidade $` C_j `$. Para representar a alocação de uma VM **i** em um servidor j utilizamos uma variável de decisão booleana xij que assume 1 no caso da máquina virtual **i** estar alocada no  servidor **j**, e 0 caso contrário. Assim, o que desejamos é a maximização do lucro:
 
-$` max(\sum_{i=1}^{V} \sum_{j=1}^{M} p_i x_{ij}) `$ a
+$` max\left ( \sum_{i=1}^{V} \sum_{j=1}^{M} p_i x_{ij} \right ) `$ a
 
 ---
 
