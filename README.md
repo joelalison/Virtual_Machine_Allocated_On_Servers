@@ -14,6 +14,14 @@ $$
 
 ---
 
+# Entendendo o Problema
+
+Para entender melhor o problema a figura abaixo mostra como funciona a variável booleana $` x_{ij} `$ que assume valor 1 se a máquina virtual **i** estiver alocada no servidor **j** e 0 caso contrário.
+
+![Logo](imagens/entendendoProblema.png | width=100)
+
+----
+
 # Metodologia
 
 Foi criado um algoritmo do Simulated Annealing e um script chamado main_SimulatedAnealing para testar a função criada. Além disso foi criado um script para verificar o ponto de mínimo da função de Rosenbrock utilizando cálculo numérico de Quasi-Newton.
