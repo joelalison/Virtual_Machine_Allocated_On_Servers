@@ -18,14 +18,14 @@ $$
 
 Para entender melhor o problema a figura abaixo mostra como funciona a variável booleana $` x_{ij} `$ que assume valor 1 se a máquina virtual **i** estiver alocada no servidor **j** e 0 caso contrário.
 
-![entendendoProblema](https://github.com/joelalison/Virtual_Machine_Allocated_On_Servers/assets/45297008/d49e8d80-bd8e-4b4c-9d3b-66b998592fed){:width="300px"}
+![entendendoProblema](https://github.com/joelalison/Virtual_Machine_Allocated_On_Servers/assets/45297008/d49e8d80-bd8e-4b4c-9d3b-66b998592fed){width="300px"}
 
 ----
 
 # Alocando números para o problema
 Agora que entendemos o problema, devemos tratar o problema numericamente ao invez de genericamente. Para isso foi proposto um problema com 5 máquinas virtuais (com demandas e preços) e 2 servidores (com capacidades), mostrados na figura abaixo:
 
-![ColocandoNumerosAoProblema](https://github.com/joelalison/Virtual_Machine_Allocated_On_Servers/issues/3#issue-2040886809){:width="300px"}
+![ColocandoNumerosAoProblema](https://github.com/joelalison/Virtual_Machine_Allocated_On_Servers/issues/3#issue-2040886809){width="300px"}
 
 ----
 
