@@ -13,9 +13,6 @@ num_vms = length(DM);
 C = [30 25];
 num_servidores = length(C);
 
-melhor_solucao = [];
-melhor_lucro = 0;
-
 combinacoes = dec2bin(0:2^(num_vms*num_servidores)-1) - '0';
 soma = 0;
 lucro = 0;
@@ -43,14 +40,10 @@ for i=1:size(combinacoes,1)
     lucro = 0;
 end
 
-disp('Melhor solução: ')
-for j=1:2
-    for i=1:5
-        if melhorAlocacoes(i,j) == 1
-            fprintf('\nMáquina virtual %i alocada no servidor %i\n',i,j)
-        end
-    end
+disp('Melhor solução: ');
+[i, j] = find(melhorAlocacoes);  % Encontrar índices onde melhorAlocacoes é 1
+for k = 1:length(i)
+    fprintf('\nMáquina virtual %i alocada no servidor %i\n', i(k), j(k));
 end
-fprintf('\n')
-disp('Lucro: ')
-disp(melhorLucro)
+fprintf('\nLucro: \n');
+disp(melhorLucro);
