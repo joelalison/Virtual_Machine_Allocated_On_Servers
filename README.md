@@ -35,26 +35,23 @@ Agora que entendemos o problema, devemos tratar o problema numericamente ao inve
 
 # Metodologia
 
-Foi criado um algoritmo do Simulated Annealing e um script chamado main_SimulatedAnealing para testar a função criada. Além disso foi criado um script para verificar o ponto de mínimo da função de Rosenbrock utilizando cálculo numérico de Quasi-Newton.
+Sabe-se a princípio existem 10 combinações de conexões máquina virtual $` \times `$ servidores (5 máquinas virtuais para 2 servidores). Porém cada uma dessas combinações podem assumir os valores 0 ou 1 já que a máquina virtual pode ou não está alocada no servidor j. Desta forma pode-se entender que cada uma dessas 10 combinações é um bit (0 ou 1) e o número real de combinações possíveis é de $` 2^{10} = 1024 `$ combinações de soluções a princípio.
+
+Também foi proposto que uma mesma máquina virtual pudesse ser alocada nos dois servidores.
+
+Assim um algoritmo de busca exaustiva foi elaborado no MATLAB e pode ser encontrado na função **busca_exaustiva.m** e uma script **main_busca_exaustiva** para testar essa função com os valores de preços, demandas e capacidades como descrito na seção anterior.
 
 ---
 
-# Função Simulated Annealing
+# Resultados
 
-Os parâmetros do algoritmo foram escolhidos por tentativa e erro:
-- Temperatura inicial: 80
-- Taxa de resfriamento: 0.9
-- Iterações: 20.000
+O resultado do algoritmo feito em MATLAB de busca exaustiva encontrou que a melhor combinação de máquinas virtuais alocadas em servidores é de:
 
-A função objetivo é encontrar o mínimo da função de Rosenbrock definida por:
+- **Servidor 1** - máquinas 1, 2 e 3
+- **Servidor 2** - máquinas 1 e 5
 
-$` f(x, y) = (1 - x)^2 + 100 \cdot (y - x^2)^2 `$
+e o lucro ótimo obtido foi de R\$ 275,00
 
----
+Foi comparado com a solução de um solver em python e o resultado obtido foi o mesmo da busca exaustiva:
 
-# Discussão
-
-Foi testado inicialmente o algoritmo de Quasi-Newton para verificar a solução e foram encontrados valores de $` (x,y,z) = (1,0.9999,0.00000000001) `$ que é próximo de $` (1,1,0) `$
-
-Como existe uma componente aleatória envolvida no processo do algoritmo do Simulated Annealing, o resultado sempre será diferente, porém para a escolha destes parâmetros os valores de x e y estão com erro apenas na segunda casa decimal, ou seja de centésimos, enquanto que o valor da função objetivo apresenta um erro na quarta casa decimal. Algo em torno de $` (x,y,z)  \simeq  (1.0XX,1.0XX,0.000X) `$
-
+[Google colab](https://colab.research.google.com/drive/1TSMIn_uTb4qzO2OyouqzFXC0bpb7IovI?usp=sharing)
