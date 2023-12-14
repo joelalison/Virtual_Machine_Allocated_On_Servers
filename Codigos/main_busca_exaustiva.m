@@ -1,4 +1,7 @@
 clear,clc,close all
+
+addpath('utils')
+
 % declaracao da variavel VMs que representa as máquinas virtuais
 % portanto possui os valores numéricos de demandas e preços
 VMs = [50 40 60 30 75;10 8 12 6 15];
