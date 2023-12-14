@@ -18,7 +18,7 @@ $$
 
 Para entender melhor o problema a figura abaixo mostra como funciona a variável booleana $` x_{ij} `$ que assume valor 1 se a máquina virtual **i** estiver alocada no servidor **j** e 0 caso contrário.
 
-![entendendoProblema](https://github.com/joelalison/Virtual_Machine_Allocated_On_Servers/assets/45297008/550dda22-72a8-4ade-a6d3-d76191e07d0f)
+![entendendoProblema](https://github.com/joelalison/Virtual_Machine_Allocated_On_Servers/assets/45297008/b5c9ba1a-46df-4de0-9699-04b2c8624a4c)
 
 ----
 
