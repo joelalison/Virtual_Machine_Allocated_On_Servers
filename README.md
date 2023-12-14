@@ -6,6 +6,11 @@ $$
 \text{maximizar } \left( \sum_{i=1}^{V} \sum_{j=1}^{M} p_i x_{ij} \right)
 $$
 
+sujeito a seguinte restrição:
+
+$$
+\sum_{i=1}^{V} d_i x_{ij} \leq C_j \text{, para todo servidor j,}
+$$
 
 ---
 
